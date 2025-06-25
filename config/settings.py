@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'himik_bot'
+    'himik_bot',
 ]
 
 MIDDLEWARE = [
