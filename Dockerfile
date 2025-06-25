@@ -14,4 +14,4 @@ COPY . .
 EXPOSE 8000
 
 # Gunicornni ishga tushirishdan oldin collectstaticni amalga oshiramiz
-CMD ["sh", "-c", "py manage.py bot"]
+CMD ["sh", "-c", "python3 manage.py bot"]
