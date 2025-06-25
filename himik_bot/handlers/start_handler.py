@@ -1,14 +1,12 @@
-from ftplib import all_errors
-
 from aiogram import F
 from aiogram.filters import StateFilter
 from aiogram.filters.command import Command
 from aiogram.fsm.context import FSMContext
-from aiogram.types import Message, CallbackQuery, ReplyKeyboardRemove, ContentType
+from aiogram.types import Message, CallbackQuery, ReplyKeyboardRemove
 from django.conf import settings
 
 from himik_bot.dispatcher import dp
-from himik_bot.buttons.reply import language_btn, menu
+from himik_bot.buttons.reply import language_btn
 from himik_bot.buttons.text import *
 from himik_bot.state.LanguageState import LanguageState
 from himik_bot.models import User
