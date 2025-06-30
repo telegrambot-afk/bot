@@ -74,12 +74,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 #
 
 # Password validation
@@ -100,16 +100,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": config("POSTGRES_DB", default="test_db"),
-        "USER": config("POSTGRES_USER", default="test_user"),
-        "PASSWORD": config("POSTGRES_PASSWORD", default="test_password"),
-        "HOST": config("POSTGRES_HOST", default="localhost"),
-        "PORT": config("POSTGRES_PORT", default="5432")
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": config("POSTGRES_DB", default="test_db"),
+#         "USER": config("POSTGRES_USER", default="test_user"),
+#         "PASSWORD": config("POSTGRES_PASSWORD", default="test_password"),
+#         "HOST": config("POSTGRES_HOST", default="localhost"),
+#         "PORT": config("POSTGRES_PORT", default="5432")
+#     }
+# }
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
